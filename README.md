@@ -1,5 +1,4 @@
-# jrv7903.github.io
-
+# Jash Vora
 
 **Data Scientist | Machine Learning Engineer | Robotics & AI Researcher**  
 
@@ -11,31 +10,13 @@
   - **Clubs:** Developer Society, Cybersecurity Club, Electronics & Robotics Club  
 
 - **IIT Madras** *(Jan 2023 - May 2026)*  
-  - **B.Sc. Data Science (Distance Learning)** 
+  - **B.S. Data Science (Distance Learning)** 
   - **Relevant Courses:** Machine Learning Foundations, DBMS, DSA, Statistics  
   - **Leadership & Clubs:** Leader of one of the 12 student houses, Google Developer Student Club, AWS Cloud Club  
 
  **Email:** jashbvora@gmail.com  
  **LinkedIn:** [linkedin.com/in/jash-vora-781393223](https://linkedin.com/in/jash-vora-781393223)  
  **GitHub:** [github.com/JRV7903](https://github.com/JRV7903)  
-
----
-
-##  Projects  
-
-### **Demand Prediction Model | IBM**  
-- Developed a **time series forecasting model** using the Prophet algorithm, optimizing seasonality trends for accurate sales predictions.  
-
-### **Breast Cancer Prediction | K-Means & ML**  
-- Implemented **Naïve Bayes, Logistic Regression, MLP**, and **K-Means clustering** to classify tumors with **93% accuracy & 94.5% recall**.  
-
----
-
-##  Achievements  
-
-- **INSPIRE Fellowship, Govt. of India** – Awarded for being in the **top 1% in HSC examinations**.  
-- **IIT Madras PAN BS ML Competition** – **2nd place** winner.  
-- **Goa Police Hackathon Winner** – Developed an **AI system** for detecting fraudulent texts and websites.  
 
 ---
 
@@ -58,6 +39,24 @@
 ### **Robotics Engineer | BariFlo Labs** *(Dec 2022 - Feb 2023)*  
 - Designed & simulated **robotic systems** using **ROS, Gazebo, and RoboDK**.  
 - Integrated **IoT platforms** (Node-RED, ThingSpeak, Power BI) for real-time monitoring.  
+
+---
+
+##  Projects  
+
+### **Demand Prediction Model | IBM**  
+- Developed a **time series forecasting model** using the Prophet algorithm, optimizing seasonality trends for accurate sales predictions.  
+
+### **Breast Cancer Prediction | K-Means & ML**  
+- Implemented **Naïve Bayes, Logistic Regression, MLP**, and **K-Means clustering** to classify tumors with **93% accuracy & 94.5% recall**.  
+
+---
+
+##  Achievements  
+
+- **INSPIRE Fellowship, Govt. of India** – Awarded for being in the **top 1% in HSC examinations**.  
+- **IIT Madras PAN BS ML Competition** – **2nd place** winner.  
+- **Goa Police Hackathon Winner** – Developed an **AI system** for detecting fraudulent texts and websites.  
 
 ---
 

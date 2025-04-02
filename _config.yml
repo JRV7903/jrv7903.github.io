@@ -1,5 +1,5 @@
 title: Jash Vora
-#logo:
-#description: something
-show_downloads: true
+logo: assets/img/linkedin pfp.jpeg
+description: Aspiring Software Developer | ML & Robotics Enthusiast
+show_downloads: false
 theme: jekyll-theme-minimal

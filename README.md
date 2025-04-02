@@ -1,6 +1,5 @@
 # jrv7903.github.io
 
-# Jash Vora  
 
 **Data Scientist | Machine Learning Engineer | Robotics & AI Researcher**  
 

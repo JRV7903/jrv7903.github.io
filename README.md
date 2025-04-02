@@ -1,5 +1,3 @@
-# Jash Vora
-
 **Data Scientist | Machine Learning Engineer | Robotics & AI Researcher**  
 
 ##  Education  

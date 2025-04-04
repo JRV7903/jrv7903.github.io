@@ -12,7 +12,7 @@ Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
   - **Relevant Courses:** Machine Learning Foundations, DBMS, DSA, Statistics  
   - **Leadership & Clubs:** Leader of one of the 12 student houses, Google Developer Student Club, AWS Cloud Club  
 
- **Email:** [jashbvora@gmail.com](mailto:jashbvora@gmail.com)
+ **Email:** [jashbvora@gmail.com](mailto:jashbvora@gmail.com)  
  **LinkedIn:** [linkedin.com/in/jash-vora-781393223](https://linkedin.com/in/jash-vora-781393223)  
  **GitHub:** [github.com/JRV7903](https://github.com/JRV7903)
 

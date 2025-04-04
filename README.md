@@ -1,4 +1,4 @@
-**Data Scientist | Machine Learning Engineer | Robotics & AI Researcher**  
+Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
 
 ##  Education  
 

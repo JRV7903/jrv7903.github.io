@@ -40,10 +40,10 @@ Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
 -  Recipient of the SOLVE project grant for developing an **IoT-driven smart inventory management system** under the guidance of Prof. Varinder Singh.
 
 ### **Reinforcement Learning for AUVs | Research Intern | BITS Pilani** *(January 2025 - June 2025)*
-- Developing **RL-based path planning algorithms** for **Autonomous Underwater Vehicles (AUVs)** under Prof. Prasad Patil.  
+- Developing **RL-based path planning algorithms for Autonomous Underwater Vehicles (AUVs)** under Prof. Prasad Patil.  
 
 ### **3D Thrust Vectoring for Jets | Research Project | BITS Pilani** *(September 2024 - December 2024)*  
-- Designing and analyzing a **3D thrust vectoring system** for improved jet maneuverability under Prof. Shibu Clement.
+- Designing and analyzing a **3-dimensional thrust vectoring system** for improved jet maneuverability under Prof. Shibu Clement.
 
 ---
 
@@ -52,8 +52,11 @@ Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
 ### **Demand Prediction Model | IBM**  
 - Developed a **time series forecasting model** using the Prophet algorithm, optimizing seasonality trends for accurate sales predictions.  
 
-### **Breast Cancer Prediction | K-Means & ML**  
+### **Breast Cancer Prediction | HarvardX**  
 - Implemented **Naïve Bayes, Logistic Regression, MLP**, and **K-Means clustering** to classify tumors with **93% accuracy & 94.5% recall**.
+
+### **System Threat Forecaster | IIT-Bombay**  
+- Developed a **predictive threat analysis framework using supervised learning algorithms** to detect and classify cybersecurity anomalies, enhancing risk mitigation strategies.
 
 ### Notable Repositories  
 

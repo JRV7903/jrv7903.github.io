@@ -51,6 +51,7 @@ Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
 
 ### **Demand Prediction Model | IBM**  
 - Developed a **time series forecasting model** using the Prophet algorithm, optimizing seasonality trends for accurate sales predictions.  
+- [View Project Repository](https://github.com/JRV7903/IBM)
 
 ### **Breast Cancer Prediction | HarvardX**  
 - Implemented **Naïve Bayes, Logistic Regression, MLP**, and **K-Means clustering** to classify tumors with **93% accuracy & 94.5% recall**.
@@ -61,12 +62,12 @@ Aspiring SDE | Machine Learning Enthusiast | Robotics & AI Researcher
 ### Notable Repositories  
 
 - **[LLM-Pull-Request-Reviewer](https://github.com/JRV7903/LLM-Pull-Request-Reviewer)**: An AI tool to automatically review PRs on GitHub using LLMs.  
+- **[Household Services Web Application](https://github.com/JRV7903/Household-Services-Web-Application)**: A web application for managing household service requests.  
 - **[Stock-Price-Predictor](https://github.com/JRV7903/Stock-Price-Predictor)**: A repository for financial forecasting and stock price prediction.  
 - **[Algo-Trader](https://github.com/JRV7903/Algo-Trader)**: Implements algorithmic trading strategies in C++.  
 - **[Face Recognizer](https://github.com/JRV7903/face_recognizer)**: A deep learning-based face detection and recognition system.  
 - **[Object Detection](https://github.com/JRV7903/object_detection)**: A real-time object detection system using deep learning techniques.  
 - **[Sentiment Analysis](https://github.com/JRV7903/Sentiment-Analysis)**: An NLP-based system to analyze and categorize sentiments in text.  
-- **[Household Services Web Application](https://github.com/JRV7903/Household-Services-Web-Application)**: A web application for managing household service requests.  
 
 ---
 

@@ -42,8 +42,11 @@ The need for an ISPC backend arose from several limitations in the existing GeNN
 
 4. **Cross-Platform Portability**: ISPC provides a unified programming model that can target multiple architectures (x86, ARM) and instruction sets, offering better portability than CUDA.
 
-![ISPC SIMD Processing Model](/assets/img/SIMD2.svg)
-*Figure 1: ISPC's Single Program, Multiple Data (SPMD) execution model enables efficient utilization of CPU SIMD units by processing multiple data elements in parallel.*
+<div style="text-align: center;">
+  <img src="/assets/img/SIMD2.svg" alt="ISPC SIMD Processing Model" style="max-width: 100%; height: auto;">
+  <br>
+  <em>Figure 1: ISPC's Single Program, Multiple Data (SPMD) execution model enables efficient utilization of CPU SIMD units by processing multiple data elements in parallel.</em>
+</div>
 
 ### Problem Statement
 
@@ -120,9 +123,6 @@ The ISPC backend follows GeNN's established code generation pattern:
 - Adapt neuron and synapse update models from the Single Threaded CPU backend
 - Atomic operations: To replace bitwise operations due to multiple lanes
 - Custom update kernels: User-defined operation vectorization
-
-![ISPC SIMD Execution Model](/assets/img/SIMD2.svg)
-*Figure 2: ISPC's vectorization approach transforms scalar operations into SIMD instructions, enabling parallel processing of multiple data elements within a single instruction cycle.*
 
 **3. Memory Layout Optimization:**
 - Structure of Arrays (SoA) layout for optimal SIMD access

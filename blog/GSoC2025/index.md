@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 title: "GSoC 2025 Project Report"
 ---
 

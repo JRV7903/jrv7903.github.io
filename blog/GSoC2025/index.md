@@ -345,6 +345,16 @@ The successful completion of this project establishes a foundation for future de
 
 ---
 
+## Acknowledgments
+
+I would like to express my sincere gratitude to my mentors, **Dr. Jamie Knight** and **Dr. Thomas Nowotny**, whose invaluable guidance, expertise, and continuous support made this project possible. Their deep knowledge of GeNN's architecture and SIMD programming principles was instrumental in navigating the complexities of backend development and achieving the project's objectives.
+
+Special thanks to Dr. Knight for his assistance with build system integration and initialization architecture. His mentorship not only helped me complete this project successfully but also significantly enhanced my understanding of high-performance computing and computational neuroscience.
+
+I am also grateful to the INCF organization and the GeNN development team for providing this opportunity through Google Summer of Code 2025, and for their commitment to advancing open-source tools in computational neuroscience.
+
+---
+
 ## References
 
 1. Intel Corporation. (2023). *Intel SPMD Program Compiler User's Guide*. [Available online](https://ispc.github.io/)

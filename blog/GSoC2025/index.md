@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 layout: post
 title: "GSoC 2025 Project Report"
 subtitle: "Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations"
@@ -11,6 +12,7 @@ background: '/assets/img/INCF_GSoC.png'
 **Organization:** INCF - GeNN Development Team  
 **Mentor:** Jamie Knight, Thomas Nowotny  
 **Project Duration:** May 2025 - August 2025  
+=======
 
 ---
 
@@ -372,4 +374,8 @@ The successful completion of this project establishes a foundation for future de
 
 ---
 
+<<<<<<< HEAD
 *This report was prepared as part of the Google Summer of Code 2025 program.*
+=======
+*This report was prepared as part of the Google Summer of Code 2025 program.*
+>>>>>>> b878e328fa9705dfc423b925d766f66432385986

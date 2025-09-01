@@ -2,6 +2,7 @@
 layout: page
 title: "Blog"
 description: "Project write-ups, technical insights, and learning experiences"
+background: '/assets/img/blog-bgd.jpg'
 ---
 
 <div class="text-center mb-5">

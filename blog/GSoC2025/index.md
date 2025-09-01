@@ -347,17 +347,17 @@ The successful completion of this project establishes a foundation for future de
 
 ## References
 
-1. Intel Corporation. (2023). *Intel SPMD Program Compiler User's Guide*. Retrieved from https://ispc.github.io/
+1. Intel Corporation. (2023). *Intel SPMD Program Compiler User's Guide*. [Available online](https://ispc.github.io/)
 
-2. Intel Corporation. (2013). *SIMD Made Easy with Intel ISPC*. Retrieved from https://www.intel.com/content/dam/develop/external/us/en/documents/simd-made-easy-with-intel-ispc.pdf
+2. Intel Corporation. (2013). *SIMD Made Easy with Intel ISPC*. [Available online](https://www.intel.com/content/dam/develop/external/us/en/documents/simd-made-easy-with-intel-ispc.pdf)
 
-3. Pharr, M., & Mark, W. R. (2012). ispc: A SPMD compiler for high-performance CPU programming. *Proceedings of Innovative Parallel Computing (InPar)*. Retrieved from https://ieeexplore.ieee.org/document/6339601
+3. Pharr, M., & Mark, W. R. (2012). ispc: A SPMD compiler for high-performance CPU programming. *Proceedings of Innovative Parallel Computing (InPar)*. [Available online](https://ieeexplore.ieee.org/document/6339601)
 
-4. Yavuz, E., Turner, J., & Nowotny, T. (2016). GeNN: a code generation framework for accelerated brain simulations. *Scientific Reports*, 6, 18854. Retrieved from https://www.nature.com/articles/srep18854
+4. Yavuz, E., Turner, J., & Nowotny, T. (2016). GeNN: a code generation framework for accelerated brain simulations. *Scientific Reports*, 6, 18854. [Available online](https://www.nature.com/articles/srep18854)
 
-5. Knight, J. C., Komissarov, A., & Nowotny, T. (2021). PyGeNN: A Python Library for GPU-Enhanced Neural Networks. *Frontiers in Neuroinformatics*, 15, 659005. Retrieved from https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2021.659005/full
+5. Knight, J. C., Komissarov, A., & Nowotny, T. (2021). PyGeNN: A Python Library for GPU-Enhanced Neural Networks. *Frontiers in Neuroinformatics*, 15, 659005. [Available online](https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2021.659005/full)
 
-6. Vogels, T. P., & Abbott, L. F. (2005). Signal propagation and logic gating in networks of integrate-and-fire neurons. *Journal of Neuroscience*, 25(46), 10786-10795. Retrieved from https://www.jneurosci.org/content/25/46/10786
+6. Vogels, T. P., & Abbott, L. F. (2005). Signal propagation and logic gating in networks of integrate-and-fire neurons. *Journal of Neuroscience*, 25(46), 10786-10795. [Available online](https://www.jneurosci.org/content/25/46/10786)
 
 7. Hennessy, J. L., & Patterson, D. A. (2019). *Computer architecture: a quantitative approach*. Morgan Kaufmann.
 

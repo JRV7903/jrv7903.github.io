@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSoC 2025 Project Report"
+title: "GSoC'25 @ GeNN | INCF"
 subtitle: "Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations"
 date: 2025-09-01
 author: "Jash Vora"

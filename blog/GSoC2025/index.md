@@ -1,33 +1,18 @@
 ---
-layout: gsoc-report
+layout: none
 title: "GSoC 2025 Project Report"
-subtitle: "Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations"
-description: "Technical report on developing an Intel SPMD Program Compiler (ISPC) backend for GeNN to enable SIMD-accelerated neural network simulations on CPU hardware"
-author: "Jash Vora"
-organization: "INCF"
-mentor: "Jamie Knight, Thomas Nowotny"
-duration: "May 2025 - August 2025"
-date: "2025-09-01"
-permalink: /blog/GSoC2025/
 ---
 
-### Important Links for the Project
+# Google Summer of Code 2025 Technical Report
+## Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations
 
-| **Topic**             | **Links**                                                                                                                  |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Code Changes          | [Merged Pull Requests](https://github.com/genn-team/genn/pulls?q=is%3Apr+author%3Ajashvora+is%3Aclosed)               |
-| Documentation & Blogs | [Project Documentation](https://genn-team.github.io/genn/documentation/4/html/index.html)                                           |
-| Code Repository       | [GeNN ISPC Backend Implementation](https://github.com/genn-team/genn/tree/master/src/genn/backends/ispc) |
+**Student:** Jash Vora
+**Organization:** INCF - GeNN Development Team  
+**Mentor:** Jamie Knight, Thomas Nowotny
+**Project Duration:** May 2025 - August 2025  
+**Date:** September 2025
 
 ---
-
-# GSoC 2025 Project Report: Developing an ISPC Backend for GeNN
-
-## A Bird's Eye Overview
-
-My project was [Developing an ISPC Backend for GeNN](https://summerofcode.withgoogle.com/programs/2025/projects/), focusing on bridging the performance gap between single-threaded CPU implementations and GPU-accelerated neural network simulations. I proposed to achieve this by creating a comprehensive ISPC (Intel SPMD Program Compiler) backend that leverages SIMD parallelization capabilities of modern processors, continuing GeNN's mission to make high-performance neural network simulations accessible across diverse hardware platforms.
-
-The project integrates **SIMD vectorization techniques** with **neural network simulation frameworks**, leveraging **Intel's SPMD programming model** to create efficient CPU-based implementations that maintain compatibility with existing GeNN models while providing significant performance improvements over traditional scalar approaches.
 
 ## Abstract
 
@@ -37,9 +22,7 @@ The implementation involved creating a complete ISPC code generation pipeline wi
 
 ---
 
-## Need for the Project
-
-As the demand for accessible neural network simulation tools continues to grow, so do the challenges related to hardware accessibility, performance optimization, and cross-platform compatibility. This project addresses these challenges by utilizing Intel's SPMD Program Compiler (ISPC) to create realistic SIMD-accelerated simulations of neural networks. According to recent studies on parallel computing architectures, SIMD-based approaches possess advanced vectorization capabilities and efficient memory utilization patterns, allowing them to act as a bridge between single-threaded CPU and GPU implementations.
+## Introduction & Need for the Project
 
 ### Background on Neural Simulations and GeNN
 
@@ -47,109 +30,61 @@ GeNN (GPU-Enhanced Neuronal Networks) is a C++ library designed to facilitate th
 
 The framework employs a code generation approach where user-defined models are translated into optimized kernel code. This design allows for high performance while maintaining flexibility in model definition. GeNN supports various backends including CUDA for NVIDIA GPUs and single-threaded CPU implementations.
 
-### The Performance Gap Challenge
+### Motivation for ISPC Backend
 
-The need for an ISPC backend arose from several critical limitations in the existing GeNN ecosystem:
+The need for an ISPC backend arose from several limitations in the existing GeNN ecosystem:
 
-1. **Hardware Accessibility Crisis**: Not all researchers have access to high-end GPUs, creating a significant barrier to entry for high-performance neural network simulations.
+1. **Hardware Accessibility**: Not all researchers have access to high-end GPUs, limiting the adoption of GeNN's GPU-accelerated features.
 
-2. **Performance Cliff**: Single-threaded CPU implementations often exhibit 10-20x slower performance compared to GPU versions, creating an unacceptable performance gap for users without specialized hardware.
+2. **Performance Gap**: Single-threaded CPU implementations often exhibit poor performance compared to GPU versions, creating a significant performance cliff for users without GPU access.
 
-3. **SIMD Underutilization**: Modern CPUs feature powerful SIMD instruction sets (SSE, AVX, AVX-512) that remain largely untapped in traditional scalar CPU implementations, representing a massive waste of available computational resources.
+3. **SIMD Underutilization**: Modern CPUs feature powerful SIMD instruction sets (SSE, AVX, AVX-512) that remain largely untapped in traditional scalar CPU implementations.
 
-4. **Cross-Platform Portability**: ISPC provides a unified programming model that can target multiple architectures (x86, ARM) and instruction sets, offering better portability than CUDA while maintaining high performance.
+4. **Cross-Platform Portability**: ISPC provides a unified programming model that can target multiple architectures (x86, ARM) and instruction sets, offering better portability than CUDA.
 
-By integrating ISPC-based agents into GeNN's backend architecture, the project aims to democratize access to high-performance neural network simulations, focusing on emergent SIMD optimization patterns and overall system performance characteristics.
+### Problem Statement
 
-<div class="section-divider">–––</div>
+The primary challenge was to develop a backend that could:
+- Leverage SIMD parallelization for neural network computations
+- Provide performance between single-threaded CPU and GPU implementations
+- Maintain compatibility with existing GeNN model definitions
+- Support cross-platform deployment (Windows, Linux, macOS)
+- Handle complex memory access patterns inherent in neural network simulations
 
-## The Final Framework: GeNN-ISPC
+---
 
-> _As it is often said, performance is not just about speed. It's about creating solutions that scale._
+## Project Aim & Objectives
 
-Meaning, instead of just optimizing individual kernels for SIMD execution, I wanted to build a comprehensive backend framework to create a sustainable solution that can be leveraged across the entire GeNN ecosystem.
+### Primary Aim
+Develop a fully functional ISPC backend for GeNN that enables SIMD-accelerated neural network simulations on CPU hardware.
 
-And hence, I created the <span class="framework-name">GeNN-ISPC Backend</span>.
+### Specific Objectives
 
-### GeNN-ISPC: SIMD-Powered Neural Network Acceleration
+1. **Backend Architecture Implementation**
+   - Integrate ISPC code generation into GeNN's existing backend framework
+   - Implement kernel generation for neuron updates, synaptic processing, and initialization
 
-<span class="framework-name">GeNN-ISPC</span> (GeNN with Intel SPMD Program Compiler), a cutting-edge backend designed to accelerate neural network simulations using advanced SIMD vectorization techniques and efficient memory management strategies.
+2. **Memory Management Optimization**
+   - Develop efficient memory layouts for SIMD operations
+   - Implement optimized gather/scatter operations for sparse connectivity patterns
+   - Handle memory alignment requirements for vectorized operations
 
-The implementation encapsulates the core components and objectives of high-performance CPU computing:
+3. **Feature Compatibility**
+   - Ensure compatibility with existing GeNN neuron and synapse models
+   - Support custom update operations and user-defined functions
+   - Maintain API consistency with other backends
 
-> So, how exactly does GeNN-ISPC work?
+4. **Performance Evaluation**
+   - Benchmark ISPC backend against CPU and GPU implementations
+   - Analyze performance across different model sizes and connectivity patterns
+   - Evaluate cross-platform performance characteristics
 
-The following diagram illustrates the architecture and data flow of the ISPC backend within GeNN's code generation framework:
+5. **Integration and Testing**
+   - Integrate with GeNN's build system
+   - Develop comprehensive test suite
+   - Ensure compatibility with PyGeNN Python interface
 
-<div class="highlight-box">
-<strong>GeNN-ISPC Architecture Overview:</strong>
-<br><br>
-<code>User Model Definition</code> → <code>GeNN Code Generator</code> → <code>ISPC Backend</code> → <code>Vectorized Kernels</code> → <code>SIMD Execution</code>
-<br><br>
-The ISPC backend seamlessly integrates into GeNN's existing code generation pipeline, automatically translating neural network models into highly optimized SIMD code that can leverage modern CPU vector instruction sets.
-</div>
-
-### Key Components and Features Implemented
-
-1. **SIMD Kernel Generation**:
-   - Vectorized neuron update kernels with efficient state variable processing
-   - Optimized synaptic processing with gather/scatter operations for sparse connectivity
-   - Custom reduction operations for population-level statistics and spike counting
-
-2. **Memory Layout Optimization**:
-   - Structure-of-Arrays (SoA) memory layout for optimal SIMD access patterns
-   - Aligned memory allocation strategies for vectorized load/store operations
-   - Efficient handling of irregular memory access patterns in sparse networks
-
-3. **Cross-Platform Compatibility**:
-   - Automatic SIMD instruction set detection and optimization
-   - Support for SSE, AVX, and AVX-512 instruction sets
-   - Seamless deployment across Windows, Linux, and macOS platforms
-
-4. **Performance Monitoring**:
-   - Integrated benchmarking and profiling capabilities
-   - Real-time performance metrics collection
-   - Comparative analysis tools for different backend implementations
-
-### Framework Capabilities
-
-GeNN-ISPC integrates multiple capabilities to automate and optimize neural network simulation workflows:
-
-1. **Automatic Vectorization**:
-   - Intelligent loop vectorization for neuron state updates
-   - Efficient SIMD utilization for mathematical operations
-   - Optimized memory access patterns for cache efficiency
-
-2. **Adaptive Performance Scaling**:
-   - Dynamic SIMD width selection based on available instruction sets
-   - Load balancing strategies for heterogeneous workloads
-   - Memory bandwidth optimization techniques
-
-3. **Seamless Integration**:
-   - Drop-in replacement for existing GeNN backends
-   - Maintained API compatibility with PyGeNN
-   - Comprehensive testing and validation framework
-
-4. **Advanced Debugging and Profiling**:
-   - SIMD-aware debugging utilities
-   - Performance bottleneck identification tools
-   - Memory usage optimization recommendations
-
-### Accomplishments of <span class="framework-name">GeNN-ISPC</span> So Far
-
-* **Complete Backend Implementation**: Successfully integrated ISPC code generation into GeNN's existing architecture with full feature parity
-* **Significant Performance Gains**: Achieved <span class="metric positive">3-4x speedup</span> over single-threaded CPU implementations across various neural network models
-* **Cross-Platform Deployment**: Validated functionality across Windows, Linux, and macOS with consistent performance characteristics
-* **Comprehensive Testing Suite**: Developed extensive test coverage ensuring correctness and reliability of SIMD implementations
-
-### Future Improvements
-
-* **Multi-threading Integration**: Combine ISPC SIMD parallelization with OpenMP threading for hybrid parallelization strategies
-* **Advanced Memory Optimization**: Implement cache-aware data layouts and prefetching strategies for irregular access patterns
-* **Heterogeneous Computing**: Explore integration with Intel oneAPI for unified CPU/GPU programming models
-* **Machine Learning-Guided Optimization**: Develop adaptive optimization strategies based on runtime performance characteristics
-
-<div class="section-divider">–––</div>
+---
 
 ## Methodology
 
@@ -434,23 +369,6 @@ The successful completion of this project establishes a foundation for future de
 6. Vogels, T. P., & Abbott, L. F. (2005). Signal propagation and logic gating in networks of integrate-and-fire neurons. *Journal of Neuroscience*, 25(46), 10786-10795.
 
 7. Hennessy, J. L., & Patterson, D. A. (2019). *Computer architecture: a quantitative approach*. Morgan Kaufmann.
-
----
-
-## Acknowledgements
-
-> After my exhilarating journey of `GSoC @ INCF` in the past few months, I am proud of many accomplishments, but mostly of myself, for having been able to absorb knowledge from the vast expertise of my mentors and peers. This priceless experience of each breakthrough, challenge, error, and success in the lines of code written by me has given me much to look forward to in a future career in high-performance computing, neural simulation, and open-source development.
-
-I am grateful and extremely thankful to the entire community at INCF and the GeNN development team, with everyone from experienced researchers to fellow contributors never hesitant to contribute to every discussion, ranging from SIMD optimization techniques to debugging complex vectorization issues. I have carried out most of the development and discussion throughout my project in close collaboration with my mentors **Jamie Knight** and **Thomas Nowotny**, and am truly amazed at the collaborative spirit and technical excellence of everyone involved, making my deep-dive into high-performance computing and neural simulation frameworks an extremely cherished experience!
-
-I hope to keep contributing to GeNN and the broader computational neuroscience community, continuing to push the boundaries of accessible high-performance neural network simulation tools.
-
-### Special Thanks
-
-* **Jamie Knight** and **Thomas Nowotny** for their exceptional mentorship and technical guidance throughout the project
-* The **GeNN development team** for their support in integrating the ISPC backend into the existing codebase
-* The **INCF organization** for providing this incredible opportunity to contribute to computational neuroscience
-* The **Intel ISPC team** for creating such a powerful and accessible SIMD programming framework
 
 ---
 

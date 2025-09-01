@@ -1,16 +1,16 @@
 ---
-layout: none
+layout: post
 title: "GSoC 2025 Project Report"
+subtitle: "Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations"
+date: 2025-09-01
+author: "Jash Vora"
+background: '/assets/img/INCF_GSoC.png'
 ---
 
-# Google Summer of Code 2025 Technical Report
-## Developing an ISPC Backend for GeNN: Bridging GPU and CPU Performance for Neural Network Simulations
-
-**Student:** Jash Vora
+**Student:** Jash Vora  
 **Organization:** INCF - GeNN Development Team  
-**Mentor:** Jamie Knight, Thomas Nowotny
+**Mentor:** Jamie Knight, Thomas Nowotny  
 **Project Duration:** May 2025 - August 2025  
-**Date:** September 2025
 
 ---
 

@@ -11,7 +11,6 @@ background: '/assets/img/INCF_GSoC.png'
 **Organization:** INCF - GeNN Development Team  
 **Mentor:** Jamie Knight, Thomas Nowotny  
 **Project Duration:** May 2025 - August 2025  
-=======
 
 ---
 

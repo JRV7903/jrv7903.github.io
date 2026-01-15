@@ -11,6 +11,18 @@ background: '/assets/img/blog-bgd.jpg'
 
 <div class="row">
   <div class="col-lg-8 col-md-10 mx-auto">
+
+    <div class="post-preview">
+      <a href="OCR_Systems/">
+        <h2 class="post-title">Building an OCR Product That People Actually Trust</h2>
+        <h3 class="post-subtitle">Lessons from Automating Claims Processing at Generali Central</h3>
+      </a>
+      <p class="post-meta">Posted on October 15, 2025</p>
+      <p>Building an AI product inside a live insurance operation turned out to be far more about people, trust, and workflow design than model performance alone. A deep dive into why accuracy isn't enough.</p>
+      <a href="OCR_Systems/" class="btn btn-primary">Read More</a>
+    </div>
+
+    <hr>
     
     <div class="post-preview">
       <a href="GSoC2025/">

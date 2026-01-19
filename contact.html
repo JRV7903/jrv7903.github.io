@@ -14,29 +14,98 @@ background: '/assets/img/contact.webp'
         technology and innovation.</p>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-4 text-center mb-5">
-        <div class="contact-item p-4">
-          <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
-          <h5>Email</h5>
-          <p><a href="mailto:jashbvora@gmail.com">jashbvora@gmail.com</a></p>
+    <style>
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .contact-card {
+        background: #fff;
+        padding: 2.5rem;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        border: 1px solid #eee;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-icon {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #343a40;
+      }
+
+      .contact-link-btn {
+        margin-top: auto;
+        display: inline-block;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: 600;
+        padding: 0.5rem 1.2rem;
+        border-radius: 50px;
+        transition: all 0.2s ease;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+      }
+
+      .contact-link-btn:hover {
+        background-color: #007bff;
+        color: #fff;
+        border-color: #007bff;
+        text-decoration: none;
+      }
+
+      .email-text {
+        word-break: break-all;
+        font-size: 0.95rem;
+      }
+    </style>
+
+    <div class="contact-grid">
+      <!-- Email -->
+      <div class="contact-card">
+        <div class="mb-3">
+          <i class="fas fa-envelope contact-icon text-primary"></i>
         </div>
+        <h3 class="contact-title">Email</h3>
+        <a href="mailto:jashbvora@gmail.com" class="contact-link-btn email-text">jashbvora@gmail.com</a>
       </div>
 
-      <div class="col-lg-3 col-md-4 text-center mb-5">
-        <div class="contact-item p-4">
-          <i class="fab fa-linkedin fa-3x text-primary mb-3"></i>
-          <h5>LinkedIn</h5>
-          <p><a href="https://linkedin.com/in/jash-vora-781393223" target="_blank">Connect with me</a></p>
+      <!-- LinkedIn -->
+      <div class="contact-card">
+        <div class="mb-3">
+          <i class="fab fa-linkedin contact-icon text-primary"></i>
         </div>
+        <h3 class="contact-title">LinkedIn</h3>
+        <a href="https://linkedin.com/in/jash-vora-781393223" target="_blank" class="contact-link-btn">Connect with
+          me</a>
       </div>
 
-      <div class="col-lg-3 col-md-4 text-center mb-5">
-        <div class="contact-item p-4">
-          <i class="fab fa-github fa-3x text-primary mb-3"></i>
-          <h5>GitHub</h5>
-          <p><a href="https://github.com/JRV7903" target="_blank">Check out my code</a></p>
+      <!-- GitHub -->
+      <div class="contact-card">
+        <div class="mb-3">
+          <i class="fab fa-github contact-icon text-primary"></i>
         </div>
+        <h3 class="contact-title">GitHub</h3>
+        <a href="https://github.com/JRV7903" target="_blank" class="contact-link-btn">Check out my projects</a>
       </div>
     </div>
 

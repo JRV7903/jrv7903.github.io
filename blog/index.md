@@ -36,6 +36,16 @@ background: '/assets/img/blog-bgd.jpg'
 
     <hr>
 
+    <div class="post-preview">
+      <a href="Smart_Inventory_System/">
+        <h2 class="post-title">Building an Industry-Ready Smart Inventory System Under SOLVE at BITS Pilani</h2>
+        <h3 class="post-subtitle">From Prototype to Product: Lessons in Hardware, Robustness, and Real-World Engineering</h3>
+      </a>
+      <p class="post-meta">Posted on June 15, 2025</p>
+      <p>Lessons learned from building a robust, industrial-grade smart inventory system under the SOLVE grant. A deep dive into hardware constraints, supply chain realities, and testing for failure.</p>
+      <a href="Smart_Inventory_System/" class="btn btn-primary">Read More</a>
+    </div>
+
     <div class="text-center">
       <p class="text-muted">More posts coming soon! Stay tuned for updates on my latest projects and research.</p>
     </div>

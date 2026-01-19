@@ -19,7 +19,7 @@ From a purely technical lens, this felt like a classic computer vision + NLP tas
 
 In reality, building an **AI product inside a live insurance operation** turned out to be far more about **people, trust, and workflow design** than model performance alone.
 
-This post walks through the **entire journey** — from talking to users on the ground, to discovering why high accuracy wasn’t enough, to designing systems that employees actually trusted and adopted.
+This post walks through the **entire journey** : from talking to users on the ground, to discovering why high accuracy wasn’t enough, to designing systems that employees actually trusted and adopted.
 
 ---
 
@@ -49,7 +49,7 @@ That’s when I realized:
 
 Instead of tuning the model further, I stepped away from the code and started doing what I probably should’ve done earlier - **talking to users**.
 
-I sat with:
+I scheduled meets with:
 
 * Claims processors
 * Underwriting teams

@@ -2,7 +2,7 @@
 layout: post
 title: "Building an Industry-Ready Smart Inventory Management System Under SOLVE at BITS Pilani"
 subtitle: "From Prototype to Product: Lessons in Hardware, Robustness, and Real-World Engineering"
-date: 2025-06-15
+date: 2025-07-22
 author: "Jash Vora"
 background: '/assets/img/blog-bgd.jpg'
 ---
